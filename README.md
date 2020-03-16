@@ -1,7 +1,8 @@
 # Facebook-AI-Hackathon2020
 ## Project **EmoTorch** is built for the Facebook Hackathon Contest in the Artificial Intelligence Track using the mentioned tool PyTorch.
 
-![PyTorch](PyTorch.jpg)
+
+<img src='Images/PyTorch.jpg'/>
 
 **Contributors**
 
@@ -9,7 +10,9 @@
 - [Nathan Curtis](https://github.com/njcurtis3) - USA
 - [Yashika Sharma](https://github.com/Yashika51) - India
 
-**Face Emotion Recognition** project aims at predicting the emotions of the user based on his facial image.
+**Face Emotion Recognition** project aims at predicting the emotions of the user based on their facial image.
+
+<img src='Images/ss2.jpg' width=400/>  <img src='Images/ss3.jpg' width=400 />
 
 The motivation for this project came from the recommendation systems.
 Often we see products recommended based on the user's search history, watch history , purchase history etc. These sort of systems depend on the past history and records. We with this project want to use real-time recommendation system. The system will use our model to predict the emotion of the user based on his facial expressions and will recommend products to suit the mood of the user.
@@ -33,6 +36,8 @@ Often we see products recommended based on the user's search history, watch hist
 The model is built entirely on the publicly available datasets. Since, the field **Facial Emotion Recognition(FER)** is not much developed yet we had very limited available datasets. Based on our research, we chose the FER dataset. 
 
 The data consists of 48x48 pixel grayscale images of faces. The faces have been automatically registered so that the face is more or less centered and occupies about the same amount of space in each image. The task is to categorize each face based on the emotion shown in the facial expression in to one of seven categories.
+
+
 
 ### Emotions
 | Class | Label |
@@ -58,6 +63,8 @@ The reason behind choosing this dataset among others-
  ### Data Representation
 The file train.csv contains two columns, "emotion" and "pixels". The "emotion" column contains a numeric code ranging from 0 to 6, inclusive, for the emotion that is present in the image. The "pixels" column contains a string surrounded in quotes for each image. The contents of this string a space-separated pixel values in row major order. test.csv contains only the "pixels" column and our task is to predict the emotion column.
 
+<img src='Images/sample_train_data.jpg'/>
+
 This dataset was prepared by Pierre-Luc Carrier and Aaron Courville, as part of an ongoing research project.
 
 
@@ -70,6 +77,8 @@ This dataset was prepared by Pierre-Luc Carrier and Aaron Courville, as part of 
 
 - [Tensorboard](https://pytorch.org/docs/stable/tensorboard.html)- Used for creating the dashboard for accuracy and loss plots
 
+<img src='Images/tensorboard.jpg' />
+
 
 ## Network Architecture
 The motivation of using transfer learning for out task came after we implemented a Deep Neural Network from Scratch. The model build from scratch gives accuracy only around 18%-20%. We can boost the accuracy with the help of transfer learning.
@@ -78,9 +87,15 @@ PyTorch's models module has variety of pretrained networks which can be easily d
 
 In our project, we tried multiple networks before settling to VGG19.
 
+<img src='Images/vgg19_network.jpg' />
+
+
 Initially we used VGG16 which gave us accuracy below 40% followed by ResNet50 with 41% and DenseNet101 with 42.5%. VGG19 yields an accuracy of 46% which is better than all other pretrained model. 
 
 Therefore, we decided to choose VGG19 for the implemetation. 
+
+
+<img src='Images/vgg19.jpg' />
 
 
 ## Model
@@ -101,10 +116,23 @@ The optimzer chosen is Adam.
 The model is completely built on the public free available dataset in contrast to the commercial FER projects that use large datasets with high resolution quality. However, the model is capable of being trained on any dataset and predicting the accurate emotions. 
 Currently the accuracy is 46% which can be improved with diverse datasets.
 
+- Training Loss
+<img src='Images/Training Loss.jpg' />
+
+-Some screenshots from Tensorboard Dashboard:
+
+<img src='Images/tensorboard1.png' width=400 />  <img src='Images/tensorboard.PNG' width=400/>
+<img src='Images/tensorboard2.png' width=600 />
+
+-Display Results
+
+<img src='Images/ss1.jpg' width=400 /> <img src='Images/ss4.jpg' width=400 />
 
 ## Further Additions
 The distribution of samples per category in the FER dataset is not balanced. 
 The category disguist is least represented with only 547 samples whereas the category happiness is most represented with 8989 samples.
+
+<img src='Images/Distribution.jpg' width="500" />
 
 Future Scope lies in augmentation. Multiple balancing techniques can be used to present equal number of apparations per category which will result into higher accuracy.
 
@@ -114,10 +142,13 @@ The model is ready and predicts accurate emotions based on the image of a person
 
 The predicted labels will be sent to the recommendation system which will inturn predict the most likely products.
 
-The front camera of a cell phone or laptop will capture the face of the person on consent while browsing Facebook Feed. Alternatively, a selfie can be fed. This image is sent to our model which predicts the emotion of the user. This emotion is sent to the recommendation system which predicts the products based on those emotions.
+The front camera of a cell phone or laptop will capture the face of the person on consent while browsing Facebook Feed. Alternatively, a selfie can be fed. This image is sent to our model which predicts the emotion of the user. This emotion is sent to the recommendation system which predicts the products based on those emotions. These emotions can also be used to recommend things like Place to Visit, Food to Eat, Song to Listen and Movie to watch.
 
-This will help in better product recommendation which in turns will increase the probability of customer buying or clicking on a product.
+This will help in better product recommendation which in turn will increase the probability of customer buying or clicking on a product.
 
+#### Article Reference for EmoTorch can be found [here](https://medium.com/@sharmayashika996/emotorch-448d40b1f56c?sk=ab99c202c152579eb7ca1b2c14d39d6e)
+
+#### [Video Reference](https://youtu.be/-espxFP4cqs)
 
 ## References
 > Thanks to [Mahdi Ashraf](https://github.com/MahdiAshraf) for reviewing the data setup
