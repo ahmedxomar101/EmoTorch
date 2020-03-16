@@ -1,5 +1,5 @@
 # Facebook-AI-Hackathon2020
-This project is built for the Facebook Hackathon Contest in the Artificial Intelligence Track using the mentioned tool PyTorch.
+Project **FaceTorch** is built for the Facebook Hackathon Contest in the Artificial Intelligence Track using the mentioned tool PyTorch.
 
 **Contributors**
 
@@ -60,13 +60,13 @@ This dataset was prepared by Pierre-Luc Carrier and Aaron Courville, as part of 
 
 
 ## Used Libraries
-- PyTorch- This is the main library used in this project. The model is entirely build on PyTorch including all the image transformation, transfer learning, training, testing.
+- [PyTorch](https://pytorch.org/)- This is the main library used in this project. The model is entirely build on PyTorch including all the image transformation, transfer learning, training, testing.
 
-- NumPy- Used for pixels manipulation
+- [NumPy](http://numpy.org/docs)- Used for pixels manipulation
 
-- Matplotlib- To plot images and loss plots.
+- [Matplotlib](http://matplotlib.org/)- To plot images and loss plots.
 
-- Tensorboard- Used for creating the dashboard for accuracy and loss plots
+- [Tensorboard](https://pytorch.org/docs/stable/tensorboard.html)- Used for creating the dashboard for accuracy and loss plots
 
 
 ## Network Architecture
@@ -114,7 +114,7 @@ The predicted labels will be sent to the recommendation system which will inturn
 
 The front camera of a cell phone or laptop will capture the face of the person while browsing Facebook Feed. This image is sent to our model which predicts the emotion of the user. This emotion is sent to the recommendation system which predicts tne products based on those emotions.
 
-This will help in better product recommendation which in turns will incrase the probability of customer buying or clicling on a product.
+This will help in better product recommendation which in turns will increase the probability of customer buying or clicking on a product.
 
 
 ## References
