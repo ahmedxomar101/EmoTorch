@@ -4,8 +4,8 @@ This project is built for the Facebook Hackathon Contest in the Artificial Intel
 **Contributors**
 
 - [Ahmed Hamido](https://github.com/AhMedDxHaMiDo) - Egypt
-- [Yashika Sharma](https://github.com/Yashika51) - India
 - [Nathan Curtis](https://github.com/njcurtis3) - USA
+- [Yashika Sharma](https://github.com/Yashika51) - India
 
 **Face Emotion Recognition** project aims at predicting the emotions of the user based on his facial image.
 
