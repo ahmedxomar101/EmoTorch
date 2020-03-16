@@ -1,5 +1,5 @@
 # Facebook-AI-Hackathon2020
-Project **EmoTorch** is built for the Facebook Hackathon Contest in the Artificial Intelligence Track using the mentioned tool PyTorch.
+## Project **EmoTorch** is built for the Facebook Hackathon Contest in the Artificial Intelligence Track using the mentioned tool PyTorch.
 
 **Contributors**
 
