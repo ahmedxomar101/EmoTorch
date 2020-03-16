@@ -4,7 +4,7 @@
   "metadata": {
     "accelerator": "GPU",
     "colab": {
-      "name": "Facial_Emotion_Recognition_vgg_Final.ipynb",
+      "name": "EmoTorch.ipynb",
       "provenance": [],
       "collapsed_sections": []
     },
