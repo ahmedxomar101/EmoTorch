@@ -1,5 +1,5 @@
 # Facebook-AI-Hackathon2020
-Project **FaceTorch** is built for the Facebook Hackathon Contest in the Artificial Intelligence Track using the mentioned tool PyTorch.
+Project **EmoTorch** is built for the Facebook Hackathon Contest in the Artificial Intelligence Track using the mentioned tool PyTorch.
 
 **Contributors**
 
@@ -112,7 +112,7 @@ The model is ready and predicts accurate emotions based on the image of a person
 
 The predicted labels will be sent to the recommendation system which will inturn predict the most likely products.
 
-The front camera of a cell phone or laptop will capture the face of the person while browsing Facebook Feed. This image is sent to our model which predicts the emotion of the user. This emotion is sent to the recommendation system which predicts tne products based on those emotions.
+The front camera of a cell phone or laptop will capture the face of the person on consent while browsing Facebook Feed. Alternatively, a selfie can be fed. This image is sent to our model which predicts the emotion of the user. This emotion is sent to the recommendation system which predicts the products based on those emotions.
 
 This will help in better product recommendation which in turns will increase the probability of customer buying or clicking on a product.
 
